@@ -18,7 +18,7 @@ config :heroku_test, HerokuTestWeb.Endpoint,
 # Do not print debug messages in production
 config :logger, level: :info
 
-config :hello, Hello.Repo,
+config :heroku_test, HerokuTest.Repo,
   adapter: Ecto.Adapters.Postgres,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
   ssl: true,
